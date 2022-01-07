@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Biography</title>
+	<link rel="icon" href="assets/img/content/icon.png">
+	<!-- ========== CSS INCLUDES ========== -->
+	<link rel="stylesheet" href="assets/css/master.css">
+</head>
+
+<body>
+	<div class="page-loader">
+		<div class="vertical-align align-center">
+			<img src="assets/loader/loader.gif" alt="" class="loader-img">
+		</div>
+	</div>
+	<!-- =============== START PLAYER ================ -->
+	<div class="main-music-player hide-player">
+		<a class="hide-player-button">
+			<i class="fa fa-plus"></i>
+			<i class="fa fa-minus"></i>
+		</a>
+		<div id="mesh-main-player" class="jp-jplayer" data-audio-src="assets/audio/flute.mp3"
+			data-title="See right through ft. Fiora" data-artist="Tensnake"></div>
+
+		<div id="mesh-main-player-content" class="mesh-main-player" role="application" aria-label="media player">
+			<div class="container">
+				<div class="row">
+					<div class="left-player-side">
+						<div class="mesh-prev">
+							<i class="fa fa-step-backward"></i>
+						</div>
+						<div class="mesh-play">
+							<i class="fa fa-play"></i>
+						</div>
+						<div class="mesh-pause">
+							<i class="fa fa-pause"></i>
+						</div>
+						<div class="mesh-next">
+							<i class="fa fa-step-forward"></i>
+						</div>
+						<button id="playlist-toggle" class="jplayerButton">
+							<span class="span-1"></span>
+							<span class="span-2"></span>
+							<span class="span-3"></span>
+						</button>
+					</div>
+					<div class="center-side">
+						<div class="mesh-current-time">
+						</div>
+						<div class="mesh-seek-bar">
+							<div class="mesh-play-bar">
+							</div>
+						</div>
+						<div class="mesh-duration">
+						</div>
+					</div>
+					<div class="right-player-side">
+						<div class="mesh-thumbnail">
+							<img src="assets/img/albums/cover3.jpg" alt="">
+						</div>
+						<div class="mesh-title">
+						</div>
+						<div class="mesh-artist">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =============== END PLAYER ================ -->
+
+	<!-- =============== START PLAYLIST ================ -->
+	<div class="playlist-wrapper" id="playlist-wrapper">
+		<div class="jp-playlist container">
+			<div class="about-list clearfix">
+				<span class="about-name">NAME</span>
+				<span class="about-length">LENGTH</span>
+				<span class="about-available">AVAILABLE ON</span>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/flute.mp3" data-artist="Tensnake"
+				data-thumbnail="assets/img/albums/cover1.jpg" data-id="trak-200">
+				<audio preload="metadata" src="assets/audio/flute.mp3" title="See right through ft. Fiora"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-headphones"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Tensnake - See Right Through Ft. Fiora
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/2.mp3" data-artist="Jack U ft. Kiesza"
+				data-thumbnail="assets/img/albums/cover2.jpg" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/2.mp3" title="Take You There"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-headphones"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Jack U ft. Kiesza - Take You There
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/3.mp3" data-artist="Bob Sinclair"
+				data-thumbnail="assets/img/albums/cover3.jpg" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/3.mp3" title="Cinderella"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-headphones"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Bob Sinclair - Cinderella
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/4.mp3" data-artist="Yuna"
+				data-thumbnail="assets/img/albums/cover4.jpg" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/4.mp3" title="Lullabies"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-headphones"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Yuna - Lullabies
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+		</div>
+	</div>
+	<!-- =============== END PLAYLIST ================ -->
+
+	<!-- =============== START TOP HEADER ================ -->
+	<div class="topHeader">
+		<div class="header">
+			<div class="rightTopHeader">
+
+				<!-- Open Menu Button -->
+				<a class="open-menu">
+					<!-- Buttons Bars -->
+					<span class="span-1"></span>
+					<span class="span-2"></span>
+					<span class="span-3"></span>
+				</a>
+			</div><!-- end rightTopHeader -->
+		</div><!-- end header -->
+		<!-- Menu Fixed Container -->
+		<div class="menu-fixed-container">
+			<!-- Menu Fixed Centred Container -->
+			<nav>
+				<!-- Menu Fixed Close Button -->
+				<div class="x-filter">
+					<span></span>
+					<span></span>
+				</div>
+				<!-- Menu Fixed Primary List -->
+				<ul>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="index.html">
+							home
+						</a>
+
+					</li>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="biography.html">
+							Biography
+						</a>
+
+					</li>
+					<li>
+						<a href="albumsFullBackground.html">
+							discography
+						</a>
+						<!-- <ul class="sub-menu">
+							
+							<li>
+								<a href="albumsGrid.html">
+									albums full background
+								</a>
+							</li>
+							
+							<li>
+								<a href="albumsGrid.html">
+									albums grid
+								</a>
+							</li>
+							
+							<li>
+								<a href="albumsSingle1.html">
+									album description
+								</a>
+							</li>
+						</ul> -->
+					</li>
+
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="gallerySingle.html">
+							gallery
+						</a>
+
+					</li>
+
+					<li>
+						<a href="video.html">
+							Video
+						</a>
+					</li>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="contact.html">
+							contact
+						</a>
+					</li>
+
+				</ul>
+				<!-- Menu Fixed Close Button -->
+				<div class="x-filter">
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</div><!-- end menu-fixed-container -->
+		<!-- =============== STAR LOGO ================ -->
+		<div class="logo-container-top">
+			<a href="index.html"><img src="assets/img/logo/whiteLogo.png" alt="Aqura"></a>
+		</div><!-- end logo-container-top -->
+		<!-- =============== END LOGO ================ -->
+	</div><!-- end topHeader -->
+	<!-- =============== END TOP HEADER ================ -->
+
+	<!-- =============== START BREADCRUMB ================ -->
+	<section class="no-mb">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="before-FullscreenSlider"></div>
+				<div class="breadcrumb-fullscreen-parent phone-menu-bg">
+					<div class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay"
+						style="background-image: url('assets/img/content/bio.jpg');" data-stellar-background-ratio="0.5"
+						data-stellar-vertical-offset="0">
+						<div class="breadTxt">
+							<h1>
+								Rezwana Choudhury Bannya
+							</h1>
+							<p>
+								Mrs. Rezwana Choudhury Bannya is a legendary exponent of Rabindra Sangeet in Bangladesh.
+								<br> She has achieved great popularity, respect and fame both in Bangladesh and
+								worldwide for
+								her <br> outstanding contribution to music.
+							</p>
+							<a href="#content" data-easing="easeInOutQuint" data-scroll="" data-speed="900"
+								data-url="false">
+								View More <i class="fa fa-angle-down"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END BREADCRUMB ================ -->
+
+	<!-- =============== START BIOGRAPHY SECTION ================ -->
+	<section style="background-image:url(assets/img/content/bio2.jpg);" class="biography padding background-properties"
+		id="content">
+		<div class="container">
+			<div class="sectionTitle paddingBottom">
+				<span class="heading-t3"></span>
+				<h2><a href="albums.html">Biography</a></h2>
+				<span class="heading-b3"></span>
+			</div><!-- end sectionTtile -->
+			<div class="row">
+				<div class="col-sm-6">
+					<p>Mrs. Rezwana Choudhury Bannya is a legendary exponent of Rabindra Sangeet in Bangladesh. She has
+						achieved great popularity, respect and fame both in Bangladesh and worldwide for her outstanding
+						contribution to music. Trained under Late Konika Bandyopadhyay, Bannya has mastered Tagore’s
+						songs in their full flavor. The sweetness in the tonal quality of Bannya’s voice combined with
+						the effortless control of the tune and perfect pronunciation of each word makes her Rabindra
+						Sangeet a distinct and divine experience for the connoisseurs.
+						Bannya, born in Rangpur, Bangladesh has been passionate about music since her childhood when she
+						commenced her musical training under her uncle Abdul Ali.</p>
+					<p>Subsequently, she trained under Sanjida Khatun and Atiqul Islam in Chayanaut and at the Bulbul
+						Academy of Fine Arts in Dhaka. Her love and passion for Rabindra Sangeet intensified and
+						flourished at Shantiniketan where she went to continue her music training under ICCR
+						scholarship. In Shantiniketan, she received training from stalwarts like Kanika Bandyopadhyay,
+						Neelima Sen, Shudish Bandopadhyay, Asesh Bandyopadhyay, Shoilajaranjan Mazumdar, Shantidev
+						Ghosh, Gora Sarbadhikary and Manju Bandopadhyay. She enjoyed a very close and special
+						relationship with Late Kanika Bandopadhyay in particular that transcended the traditional
+						Guru-Shishya parampara. Bannya considers Kanika Bandopadhyay as her friend, philosopher and
+						guide. It was with her inspiration that Bannya established “Shurer Dhara”, a music school in
+						Dhaka in 1992.</p>
+					<p>Bannya has extensively travelled to almost all parts of the globe presenting Rabindra Sangeet to
+						the global audience. She has released innumerable CDs and albums that have attained immense
+						popularity and recognition.</p>
+
+				</div>
+				<div class="col-sm-6">
+					<p> She has won many awards including Bangladesh's highest civilian award the Independence Day Award
+						(2016). Rezwana was born in Rangpur, Bangladesh to her parents Mazharuddin Khan and Ismat Ara
+						Khan. Her early singing lessons started with her uncle Abdul Ali that continued later under
+						the tutelage of Sanjida Khatun and Atiqul Islam at Chhayanaut and Bulbul Academy of Fine Arts
+						(BAFA) in Dhaka. As she continued taking lessons in music and singing, she also joined the
+						Economics Program at the university after completion of her schooling. However, soon her inner-
+						self-came to the realization that music was her destiny. She received a scholarship from the
+						Indian Council for Cultural Relations (ICCR) to study in Sangit Bhavana at Santiniketan, the
+						university that was founded by Tagore himself. She took lessons from artists including Kanika
+						Bandyopadhyay, Nilima Sen, Sailajaranjan Majumdar, Santidev Ghosh, Gora Sarbadhikary, Manju
+						Bandyopadhyay and Asesh Bandyopadhyay. She trained under Kanika Banerjie (Mohor Di). Bannya is
+						currently Professor and founding chair of the Department of Dance at the University of Dhaka;
+						previously, she had been an Associate Professor in the Department of Music at the same
+						university. She also founded Shurer Dhara in 1992, a school for learning music in Dhaka.
+						In 2010, in order to commemorate the 150th birth anniversary of Rabindranath Tagore, she brought
+						out a complete audio version of Gitobitan, called Sruti Gitobitan.</p>
+
+					<div class="signature">
+						<a href="#">Rezwana Choudhury Bannya:</a>
+						<div class="imgSignuature">
+							<img src="assets/img/starHomePage/signature.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end container -->
+	</section>
+	<!-- =============== END BIOGRAPHY SECTION ================ -->
+
+	<!-- =============== START FOOTER ================ -->
+	<section style="background-color:#eeeeee;">
+		<div class="footer footerPadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="copyFooter">
+							<a href="#">&copy; BANGLADESH COPYRIGHT OFFICE 2022</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<nav class="social-icons">
+							<ul class="clearfix">
+								<li><a href="#" class="icon-button shopIcon"><i
+											class="fa fa-twitter"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i
+											class="fa fa-facebook"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i
+											class="fa fa-apple"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i
+											class="fa fa-lastfm"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i
+											class="fa fa-soundcloud"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i
+											class="fa fa-youtube-play"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i
+											class="fa fa-vimeo"></i><span></span></a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-sm-4">
+						<div class="goTop" id="back-to-top">
+							<i class="fa fa-angle-up"></i>
+							<a href="#">Go Top</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END FOOTER ================ -->
+
+	<!-- ================================================== -->
+	<!-- =============== START JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script type="text/javascript" src="assets/jplayer/jplayer/jquery.jplayer.js"></script>
+	<script src="assets/js/jPlayer.js"></script>
+	<script src="assets/js/mainVideo.js"></script>
+
+	<!--[if lte IE 9 ]>
+		<script src="assets/js/placeholder.js"></script>
+		<script>
+			jQuery(function() {
+				jQuery('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+
+	<!-- ================================================== -->
+	<!-- =============== END JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+</body>
+
+
+
+</html>

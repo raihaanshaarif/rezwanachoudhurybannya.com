@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>REZWANA CHOUDHURY BANNYA</title>
+	<link rel="icon" href="assets/img/content/icon.png">
+	<!-- ========== CSS INCLUDES ========== -->
+	<link rel="stylesheet" href="assets/css/master.css">
+</head>
+
+<body>
+	<div class="page-loader">
+		<div class="vertical-align align-center">
+			<img src="assets/loader/loader.gif" alt="" class="loader-img">
+		</div>
+	</div>
+
+	<!-- =============== START PLAYER ================ -->
+	<div class="main-music-player">
+		<a class="hide-player-button">
+			<i class="fa fa-plus"></i>
+			<i class="fa fa-minus"></i>
+		</a>
+		<div id="mesh-main-player" class="jp-jplayer" data-audio-src="assets/audio/flute.mp3"
+			data-title="See right through ft. Fiora" data-artist="Tensnake"></div>
+
+		<div id="mesh-main-player-content" class="mesh-main-player" role="application" aria-label="media player">
+			<div class="container">
+				<div class="row">
+					<div class="left-player-side">
+						<div class="mesh-prev">
+							<i class="fa fa-step-backward"></i>
+						</div>
+						<div class="mesh-play">
+							<i class="fa fa-play"></i>
+						</div>
+						<div class="mesh-pause">
+							<i class="fa fa-pause"></i>
+						</div>
+						<div class="mesh-next">
+							<i class="fa fa-step-forward"></i>
+						</div>
+						<button id="playlist-toggle" class="jplayerButton">
+							<span class="span-1"></span>
+							<span class="span-2"></span>
+							<span class="span-3"></span>
+						</button>
+					</div>
+					<div class="center-side">
+						<div class="mesh-current-time">
+						</div>
+						<div class="mesh-seek-bar">
+							<div class="mesh-play-bar">
+							</div>
+						</div>
+						<div class="mesh-duration">
+						</div>
+					</div>
+					<div class="right-player-side">
+						<div class="mesh-thumbnail">
+							<img src="assets/img/albums/cover3.jpg" alt="">
+						</div>
+						<div class="mesh-title">
+						</div>
+						<div class="mesh-artist">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =============== END PLAYER ================ -->
+
+	<!-- =============== START PLAYLIST ================ -->
+	<div class="playlist-wrapper" id="playlist-wrapper">
+		<div class="jp-playlist container">
+			<div class="about-list clearfix">
+				<span class="about-name">NAME</span>
+				<span class="about-length">LENGTH</span>
+				<span class="about-available">AVAILABLE ON</span>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/flute.mp3" data-artist="Tensnake"
+				data-thumbnail="assets/img/albums/cover1.jpg" data-id="trak-200">
+				<audio preload="metadata" src="assets/audio/flute.mp3" title="See right through ft. Fiora"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-headphones"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Tensnake - See Right Through Ft. Fiora
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/2.mp3" data-artist="Jack U ft. Kiesza"
+				data-thumbnail="assets/img/albums/cover2.jpg" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/2.mp3" title="Take You There"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-headphones"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Jack U ft. Kiesza - Take You There
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/3.mp3" data-artist="Bob Sinclair"
+				data-thumbnail="assets/img/albums/cover3.jpg" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/3.mp3" title="Cinderella"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-headphones"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Bob Sinclair - Cinderella
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+			<div class="trak-item" data-audio="assets/audio/4.mp3" data-artist="Yuna"
+				data-thumbnail="assets/img/albums/cover4.jpg" data-id="trak-201">
+				<audio preload="metadata" src="assets/audio/4.mp3" title="Lullabies"></audio>
+				<div class="additional-button">
+					<div class="center-y-table">
+						<a href="#">
+							<i class="fa fa-headphones"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-apple"></i>
+						</a>
+						<a href="#">
+							<i class="fa fa-soundcloud"></i>
+						</a>
+					</div>
+				</div>
+				<div class="play-pause-button">
+					<div class="center-y-table">
+						<i class="fa fa-play"></i>
+					</div>
+				</div>
+				<div class="name-artist">
+					<div class="center-y-table">
+						<h2>
+							Yuna - Lullabies
+						</h2>
+					</div>
+				</div>
+				<time class="trak-duration">
+					00:00
+				</time>
+			</div>
+		</div>
+	</div>
+	<!-- =============== END PLAYLIST ================ -->
+
+	<!-- =============== START TOP HEADER ================ -->
+	<div class="topHeader">
+		<div class="header">
+			<div class="rightTopHeader">
+
+				<!-- Open Menu Button -->
+				<a class="open-menu">
+					<!-- Buttons Bars -->
+					<span class="span-1"></span>
+					<span class="span-2"></span>
+					<span class="span-3"></span>
+				</a>
+			</div><!-- end rightTopHeader -->
+		</div><!-- end header -->
+		<!-- Menu Fixed Container -->
+		<div class="menu-fixed-container">
+			<!-- Menu Fixed Centred Container -->
+			<nav>
+				<!-- Menu Fixed Close Button -->
+				<div class="x-filter">
+					<span></span>
+					<span></span>
+				</div>
+				<!-- Menu Fixed Primary List -->
+				<ul>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="index.html">
+							home
+						</a>
+
+					</li>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="biography.html">
+							Biography
+						</a>
+
+					</li>
+					<li>
+						<a href="albumsFullBackground.html">
+							discography
+						</a>
+						<!-- <ul class="sub-menu">
+							
+							<li>
+								<a href="albumsGrid.html">
+									albums full background
+								</a>
+							</li>
+							
+							<li>
+								<a href="albumsGrid.html">
+									albums grid
+								</a>
+							</li>
+							
+							<li>
+								<a href="albumsSingle1.html">
+									album description
+								</a>
+							</li>
+						</ul> -->
+					</li>
+
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="gallerySingle.html">
+							gallery
+						</a>
+
+					</li>
+
+					<li>
+						<a href="video.html">
+							Video
+						</a>
+					</li>
+					<!-- Menu Fixed Item -->
+					<li>
+						<a href="contact.html">
+							contact
+						</a>
+					</li>
+
+				</ul>
+				<!-- Menu Fixed Close Button -->
+				<div class="x-filter">
+					<span></span>
+					<span></span>
+				</div>
+			</nav>
+		</div><!-- end menu-fixed-container -->
+		<!-- =============== STAR LOGO ================ -->
+		<div class="logo-container-top">
+			<a href="index.html"><img src="assets/img/logo/whiteLogo.png" alt="Aqura"></a>
+		</div><!-- end logo-container-top -->
+		<!-- =============== END LOGO ================ -->
+	</div><!-- end topHeader -->
+	<!-- =============== END TOP HEADER ================ -->
+
+	<!-- =============== START BREADCRUMB ================ -->
+	<section class="no-mb">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="breadcrumb-fullscreen-parent phone-menu-bg">
+					<div class="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay"
+						style="background-image: url('assets/img/starHomePage/star.jpg');"
+						data-stellar-background-ratio="0.5" data-stellar-vertical-offset="0">
+						<div id="home" style="position: absolute;left: 0;top: 0;">
+							<div class="intro-header">
+								<div class="js-height-full star" style="height: 955px;">
+									<div class="star-pattern-1 js-height-full" style="height: 994px;"></div>
+									<div class="col-sm-12">
+										<div class="starTitle">
+											<h4>Welcome to</h4>
+											<div class="grid__item">
+												<h1>
+													<a class="link link-yaku" href="#">
+														<span>R</span><span>E</span><span>Z</span><span>W</span><span>A</span><span>N</span><span>A</span>
+													</a>
+												</h1>
+											</div>
+											<h4>Choudhury Bannya's Website</h4>
+										</div>
+										<canvas class="cover" width="1920" height="955"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END BREADCRUMB ================ -->
+
+	<!-- =============== START ABOUT ME SECTION ================ -->
+	<section class="padding albumsHome">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="sectionTitle paddingBottom">
+						<span class="heading-t3"></span>
+						<h2><a href="albumsFullBackground.html">About Me</a></h2>
+						<span class="heading-b3"></span>
+					</div><!-- end sectionTtile -->
+				</div><!-- end col-sm-12 -->
+			</div>
+			<div class="col-md-6">
+				<div class="about-left">
+					<img src="assets/img/starHomePage/abt.jpg" alt="">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="about-right">
+					<p>
+						Rezwana Choudhury Bannya is a Bangladeshi singer. She is an exponent of Rabindra Sangeet, the
+						songs written and composed by Rabindranath Tagore.
+						She has won many awards including Bangladesh's highest civilian award the Independence Day Award
+						(2016). Rezwana was born in Rangpur, Bangladesh to her parents Mazharuddin Khan and Ismat Ara
+						Khan. Her early singing lessons started with her uncle Abdul Ali that continued later under
+						the tutelage of Sanjida Khatun and Atiqul Islam at Chhayanaut and Bulbul Academy of Fine Arts
+						(BAFA) in Dhaka. As she continued taking lessons in music and singing, she also joined the
+						Economics Program at the university after completion of her schooling. However, soon her inner-
+						self-came to the realization that music was her destiny. She received a scholarship from the
+						Indian Council for Cultural Relations (ICCR) to study in Sangit Bhavana at Santiniketan, the
+						university that was founded by Tagore himself. She took lessons from artists including Kanika
+						Bandyopadhyay, Nilima Sen, Sailajaranjan Majumdar, Santidev Ghosh, Gora Sarbadhikary, Manju
+						Bandyopadhyay and Asesh Bandyopadhyay. She trained under Kanika Banerjie (Mohor Di). Bannya is
+						currently Professor and founding chair of the Department of Dance at the University of Dhaka;
+						previously, she had been an Associate Professor in the Department of Music at the same
+						university. She also founded Shurer Dhara in 1992, a school for learning music in Dhaka.
+
+						In 2010, in order to commemorate the 150th birth anniversary of Rabindranath Tagore, she brought
+						out a complete audio version of Gitobitan, called Sruti Gitobitan.
+					</p>
+					<img src="assets/img/starHomePage/signature.png" alt="">
+
+				</div>
+			</div>
+		</div><!-- end container -->
+	</section>
+	<!-- =============== END ABOUT ME SECTION ================ -->
+
+
+	<!-- =============== START ALBUM COVER SECTION ================ -->
+	<section class="padding albumsHome">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="sectionTitle paddingBottom">
+						<span class="heading-t3"></span>
+						<h2><a href="albumsFullBackground.html">Discography</a></h2>
+						<span class="heading-b3"></span>
+					</div><!-- end sectionTtile -->
+				</div><!-- end col-sm-12 -->
+			</div>
+			<div class="list-albums">
+				<ul class="list-feature col-md-12 col-xs-12 col-sm-12">
+					<li class="col-md-3 col-sm-3 col-xs-12">
+						<div class="album-icon">
+							<span class="thumbs-album">
+								<a href="albumsSingle1.html"><img width="270" height="270"
+										src="assets/img/content/albumCover.png"
+										class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+							</span>
+							<span class="disk"></span>
+						</div><!-- END ALBUM ICON -->
+						<div class="name">
+							<h3>Noon Xoxo</h3>
+							<p>Chillout</p>
+						</div><!-- end name -->
+					</li>
+
+					<li class="col-md-3 col-sm-3 col-xs-12">
+						<div class="album-icon albumIcon1">
+							<span class="thumbs-album">
+								<a href="albumsSingle3.html"><img width="270" height="270"
+										src="assets/img/content/albumCover1.png"
+										class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+							</span>
+							<span class="disk"></span>
+						</div>
+						<div class="name">
+							<h3>Stunt Vibe</h3>
+							<p>Chillout</p>
+						</div>
+					</li>
+					<li class="col-md-3 col-sm-3 col-xs-12">
+						<div class="album-icon albumIcon2">
+							<span class="thumbs-album">
+								<a href="albumsSingle4.html"><img width="270" height="270"
+										src="assets/img/content/albumCover2.png"
+										class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+							</span>
+							<span class="disk"></span>
+						</div>
+						<div class="name">
+							<h3>Strange Clouds</h3>
+							<p>Chillout</p>
+						</div>
+					</li>
+					<li class="col-md-3 col-sm-3 col-xs-12">
+						<div class="album-icon albumIcon3">
+							<span class="thumbs-album">
+								<a href="albumsSingle2.html"><img width="270" height="270"
+										src="assets/img/content/albumCover3.png"
+										class="attachment-album-thumbnail wp-post-image" alt="album-cover-1"></a>
+							</span>
+							<span class="disk"></span>
+						</div>
+						<div class="name">
+							<h3>Natural Earth</h3>
+							<p>Chillout</p>
+						</div>
+					</li>
+				</ul>
+			</div><!-- end list-albums -->
+		</div><!-- end container -->
+	</section>
+	<!-- =============== END ALBUM COVER SECTION ================ -->
+
+
+
+
+	<!-- =============== START VIDEO SECTION ================ -->
+	<section class="videoHome padding">
+		<div class="container">
+			<div class="row">
+				<div class="sectionTitle">
+					<span class="heading-t3"></span>
+					<h2><a href="video.html">Upload Video</a></h2>
+					<span class="heading-b3"></span>
+					<p>Check out my latest videos and follow me on <a
+							href="https://www.youtube.com/c/RezwanaChoudhuryBannyaOfficial/featured">Youtube</a> to
+						view more.</p>
+				</div><!-- end sectionTtile -->
+				<div class="col-sm-4">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/BRUDI9u2qvQ"
+						allowfullscreen></iframe>
+				</div><!-- end col-sm-4 -->
+				<div class="col-sm-4">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/rgSFTV89hpE"
+						allowfullscreen></iframe>
+				</div><!-- end col-sm-4 -->
+				<div class="col-sm-4">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/pSKI4ey7Wig"
+						allowfullscreen></iframe>
+				</div><!-- end col-sm-4 -->
+			</div>
+		</div>
+	</section>
+	<!-- =============== END VIDEO SECTION ================ -->
+
+	<!-- =============== START GALLERY SECTION ================ -->
+	<section style="padding-bottom:0; padding-top:0;">
+		<div class="gallerySection">
+			<div class="container-fluid" style="padding:0;">
+				<div class="col-sm-12">
+					<!-- Content Container -->
+					<div class="content-container clearfix">
+						<!-- Single Album Container -->
+						<div class="single-photo-album-container">
+							<div class="row">
+								<!-- Single Album Article -->
+								<article class="col-sm-12 col-md-6 col-xs-12">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<!-- Single Album Image -->
+											<div class="hovereffect">
+												<img class="img-responsive" src="assets/img/content/g1.jpg" alt="">
+												<div class="overlay">
+													<a class="info lightbox" href="assets/img/bigGallery/1.jpg"></a>
+												</div>
+											</div>
+										</figcaption>
+										<!-- Single Album View Button -->
+
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+												<img class="img-responsive" src="assets/img/content/g2.jpg" alt="">
+												<div class="overlay">
+													<a class="info lightbox" href="assets/img/bigGallery/2.jpg"></a>
+												</div>
+											</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+												<img class="img-responsive" src="assets/img/content/g3.jpg" alt="">
+												<div class="overlay">
+													<a class="info lightbox" href="assets/img/bigGallery/3.jpg"></a>
+												</div>
+											</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+												<img class="img-responsive" src="assets/img/content/g4.jpg" alt="">
+												<div class="overlay">
+													<a class="info lightbox" href="assets/img/bigGallery/4.jpg"></a>
+												</div>
+											</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-3 col-xs-6">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+												<img class="img-responsive" src="assets/img/content/g5.jpg" alt="">
+												<div class="overlay">
+													<a class="info lightbox" href="assets/img/bigGallery/5.jpg"></a>
+												</div>
+											</div>
+										</figcaption>
+									</figure>
+								</article>
+								<!-- Single Album Article -->
+								<article class="col-sm-12 col-md-6 col-xs-12">
+									<!-- Single Album Contant Container -->
+									<figure>
+										<!-- Single Album Image -->
+										<figcaption>
+											<div class="hovereffect">
+												<img class="img-responsive" src="assets/img/content/g6.jpg" alt="">
+												<div class="overlay">
+													<a class="info lightbox" href="assets/img/bigGallery/6.jpg"></a>
+												</div>
+											</div>
+										</figcaption>
+									</figure>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- end container -->
+		</div>
+	</section>
+	<!-- =============== END GALLERY SECTION ================ -->
+
+
+
+
+	<!-- =============== START FOOTER ================ -->
+	<section style="background-color:#eeeeee;">
+		<div class="footer footerPadding">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="copyFooter">
+							<a href="#">&copy; Bangladesh Copyright Office 2022</a>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<nav class="social-icons">
+							<ul class="clearfix">
+								<li><a href="#" class="icon-button shopIcon"><i
+											class="fa fa-twitter"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i
+											class="fa fa-facebook"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i
+											class="fa fa-apple"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i
+											class="fa fa-lastfm"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i
+											class="fa fa-soundcloud"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i
+											class="fa fa-youtube-play"></i><span></span></a></li>
+								<li><a href="#" class="icon-button shopIcon"><i
+											class="fa fa-vimeo"></i><span></span></a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-sm-4">
+						<div class="goTop back-to-top" id="back-to-top">
+							<i class="fa fa-angle-up"></i>
+							<a href="#">Go Top</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- =============== END FOOTER ================ -->
+
+	<!-- ================================================== -->
+	<!-- =============== START JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/jplayer/jplayer/jquery.jplayer.js"></script>
+	<script src="assets/js/jPlayer.js"></script>
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+	<!--[if lte IE 9 ]>
+		<script src="assets/js/placeholder.js"></script>
+		<script>
+			jQuery(function() {
+				jQuery('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+	<!-- ================================================== -->
+	<!-- =============== END JQUERY SCRIPTS ================ -->
+	<!-- ================================================== -->
+</body>
+
+
+
+</html>
